@@ -169,9 +169,9 @@ const Navbar = () => {
               )}
             </IconButton>
 
-            <Message sx={{ fontsize: "25px" }} />
+            {/* <Message sx={{ fontsize: "25px" }} />
             <Notifications sx={{ fontsize: "25px" }} />
-            <Help sx={{ fontsize: "25px" }} />
+            <Help sx={{ fontsize: "25px" }} /> */}
 
             {/**For drop down on the top right */}
             <FormControl variant="standard" value={fullName}>

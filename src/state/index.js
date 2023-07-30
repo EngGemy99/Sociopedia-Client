@@ -33,7 +33,7 @@ export const authSlice = createSlice({
       state.posts = action.payload.posts;
     },
     addNewPost: (state, action) => {
-      state.posts.push(action.payload.newPost);
+      state.posts.unshift(action.payload.newPost);
     },
     pushNewComment: (state, action) => {
       state.posts = state.posts.map((post) => {

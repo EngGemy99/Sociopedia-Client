@@ -136,7 +136,8 @@ const PostWidget = ({
         subtitle={location}
         userPicturePath={userPicturePath}
       />
-      <Typography color={neutralMain} sx={{ mt: "1rem" }}>
+
+      <Typography color={neutralMain} sx={{ mt: "1rem", textAlign: "right" }}>
         {description}
       </Typography>
       {picturePath && (
@@ -227,6 +228,7 @@ const PostWidget = ({
                       m: "0.5rem",
                       pl: "1rem",
                       flex: "1",
+                      textAlign: "right",
                     }}
                   >
                     {item.comment}

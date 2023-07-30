@@ -16,6 +16,7 @@ import {
   Button,
   IconButton,
   useMediaQuery,
+  TextField,
 } from "@mui/material";
 import FlexBetween from "components/FlexBetween";
 import Dropzone from "react-dropzone";
@@ -84,6 +85,7 @@ const MyPostWidget = ({ picturePath }) => {
           // ***setPost()*** changes local state
           // dont get confused with setPosts - changes global state
           onChange={(e) => setPost(e.target.value)}
+          multiline
           value={post}
           sx={{
             width: "100%",
